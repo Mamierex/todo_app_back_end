@@ -14,7 +14,7 @@
  *= require_self
  */
 ul{
-  list-style: none;
+  list-style: disc;
   font-size: 20px;
 }
 
