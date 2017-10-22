@@ -1,5 +1,6 @@
 class TodoController< ApplicationController
     def index
+        @my_todo_list= Todo.all
     end
     
     def new
