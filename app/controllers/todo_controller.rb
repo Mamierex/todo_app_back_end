@@ -6,6 +6,12 @@ class TodoController< ApplicationController
     def new
     end
     
+    def destroy
+       t = Todo.find_by_id(params[:id])
+       t.destroy 
+       redirect_to "/todo/index"
+    end
+    
     def create
        t= Todo.new
        t.description= params[:description]

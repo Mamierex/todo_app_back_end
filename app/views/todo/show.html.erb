@@ -8,7 +8,7 @@
   <h2><%=@my_todo.description %></h2>
   <span class="pomodoro-estimate large-pomodoro-estimate"> <%=@my_todo.pomodoro_estimate %>pomodoros</span>
   <a href="#" class="button" id="edit-todo-button">Edit</a>
-  <a href="#" class="button" id="delete-todo-button">Delete</a>
+  <a href="/todo/delete/<%= @my_todo.id %>" data-method="delete">Delete</a> 
   <a href="/todo/index">Go back...</a>
 </div>
 <h3>Todo #<%=@my_todo.id%></h3>
