@@ -4,7 +4,6 @@ class CreateTodos < ActiveRecord::Migration
       t.string :description
       t.integer :pomodoro_estimate
       t.boolean :complete
-
       t.timestamps null: false
     end
   end
