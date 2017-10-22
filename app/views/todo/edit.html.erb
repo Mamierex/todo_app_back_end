@@ -1,0 +1,13 @@
+<h1>edit a todo</h1>
+
+<form action="/todo/update/<%=@my_todo.id%>"> 
+  <%=hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <input class="text-input" id="new-todo-description" name="description" type="text" value="<%= @my_todo.description%>">
+  <input class="text-input" id="new-pomodoro-estimate" name="pomodoro_estimate" type="number" value="<%=@my_todo.pomodoro_estimate%>">
+  <input class="button" id="add-new-todo-button" type="submit" value="Edit todo">
+  
+</form>
+
+  <a href="/todo/show/<%= @my_todo.id%>">Go back...</a>
+  
+  
